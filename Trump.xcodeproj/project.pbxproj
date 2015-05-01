@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A31B0041AF35C7E009AED23 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31B0031AF35C7E009AED23 /* Card.swift */; };
+		0A31B0061AF35C95009AED23 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31B0051AF35C95009AED23 /* Deck.swift */; };
 		0AB50FF21AF1C71200937840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50FF11AF1C71200937840 /* AppDelegate.swift */; };
 		0AB50FF51AF1C71200937840 /* Trump.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50FF31AF1C71200937840 /* Trump.xcdatamodeld */; };
 		0AB50FF71AF1C71200937840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50FF61AF1C71200937840 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A31B0031AF35C7E009AED23 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Models/Card.swift; sourceTree = "<group>"; };
+		0A31B0051AF35C95009AED23 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Models/Deck.swift; sourceTree = "<group>"; };
 		0AB50FEC1AF1C71200937840 /* Trump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB50FF01AF1C71200937840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AB50FF11AF1C71200937840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A31B0001AF35C10009AED23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AB50FF61AF1C71200937840 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0A31B0011AF35C1A009AED23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AB50FF81AF1C71200937840 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0A31B0021AF35C21009AED23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A31B0031AF35C7E009AED23 /* Card.swift */,
+				0A31B0051AF35C95009AED23 /* Deck.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		0AB50FE31AF1C71200937840 = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +108,10 @@
 		0AB50FEE1AF1C71200937840 /* Trump */ = {
 			isa = PBXGroup;
 			children = (
+				0A31B0021AF35C21009AED23 /* Models */,
+				0A31B0011AF35C1A009AED23 /* Views */,
+				0A31B0001AF35C10009AED23 /* Controllers */,
 				0AB50FF11AF1C71200937840 /* AppDelegate.swift */,
-				0AB50FF61AF1C71200937840 /* ViewController.swift */,
-				0AB50FF81AF1C71200937840 /* Main.storyboard */,
 				0AB50FFB1AF1C71200937840 /* Images.xcassets */,
 				0AB50FFD1AF1C71200937840 /* LaunchScreen.xib */,
 				0AB50FF31AF1C71200937840 /* Trump.xcdatamodeld */,
@@ -217,7 +247,9 @@
 			files = (
 				0AB50FF71AF1C71200937840 /* ViewController.swift in Sources */,
 				0AB50FF51AF1C71200937840 /* Trump.xcdatamodeld in Sources */,
+				0A31B0061AF35C95009AED23 /* Deck.swift in Sources */,
 				0AB50FF21AF1C71200937840 /* AppDelegate.swift in Sources */,
+				0A31B0041AF35C7E009AED23 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +447,7 @@
 				0AB510101AF1C71200937840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AB510111AF1C71200937840 /* Build configuration list for PBXNativeTarget "TrumpTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +456,7 @@
 				0AB510131AF1C71200937840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
