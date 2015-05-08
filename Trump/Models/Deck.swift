@@ -10,4 +10,8 @@ import Foundation
 
 class Deck: NSObject {
     var cards:[Card] = []
+    
+    override init() {
+        
+    }
 }

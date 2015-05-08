@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A31B0041AF35C7E009AED23 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31B0031AF35C7E009AED23 /* Card.swift */; };
 		0A31B0061AF35C95009AED23 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31B0051AF35C95009AED23 /* Deck.swift */; };
+		0A4E99591AFC9C32001E37D1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E99581AFC9C32001E37D1 /* Player.swift */; };
+		0A4E995B1AFCA10D001E37D1 /* HandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E995A1AFCA10D001E37D1 /* HandViewController.swift */; };
 		0AB50FF21AF1C71200937840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50FF11AF1C71200937840 /* AppDelegate.swift */; };
 		0AB50FF51AF1C71200937840 /* Trump.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50FF31AF1C71200937840 /* Trump.xcdatamodeld */; };
 		0AB50FF71AF1C71200937840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB50FF61AF1C71200937840 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		0A31B0031AF35C7E009AED23 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Models/Card.swift; sourceTree = "<group>"; };
 		0A31B0051AF35C95009AED23 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Models/Deck.swift; sourceTree = "<group>"; };
+		0A4E99581AFC9C32001E37D1 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Models/Player.swift; sourceTree = "<group>"; };
+		0A4E995A1AFCA10D001E37D1 /* HandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HandViewController.swift; path = Controllers/HandViewController.swift; sourceTree = "<group>"; };
 		0AB50FEC1AF1C71200937840 /* Trump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB50FF01AF1C71200937840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AB50FF11AF1C71200937840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				0AB50FF61AF1C71200937840 /* ViewController.swift */,
+				0A4E995A1AFCA10D001E37D1 /* HandViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 			children = (
 				0A31B0031AF35C7E009AED23 /* Card.swift */,
 				0A31B0051AF35C95009AED23 /* Deck.swift */,
+				0A4E99581AFC9C32001E37D1 /* Player.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -248,7 +254,9 @@
 				0AB50FF71AF1C71200937840 /* ViewController.swift in Sources */,
 				0AB50FF51AF1C71200937840 /* Trump.xcdatamodeld in Sources */,
 				0A31B0061AF35C95009AED23 /* Deck.swift in Sources */,
+				0A4E995B1AFCA10D001E37D1 /* HandViewController.swift in Sources */,
 				0AB50FF21AF1C71200937840 /* AppDelegate.swift in Sources */,
+				0A4E99591AFC9C32001E37D1 /* Player.swift in Sources */,
 				0A31B0041AF35C7E009AED23 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
