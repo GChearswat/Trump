@@ -35,7 +35,7 @@ class Card: NSObject {
     var suit:Suit!
     var rank:Rank!
     
-    func init(suit:Suit, rank: Rank) {
+    init(suit:Suit, rank: Rank) {
         self.suit = suit
         self.rank = rank
     }

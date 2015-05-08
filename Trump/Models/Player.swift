@@ -16,6 +16,8 @@ class Player : NSObject
     
     override init()
     {
-        
+        name = ""
+        hand = []
+        trumpRank = Rank.Ace
     }
 }
