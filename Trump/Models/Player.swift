@@ -10,13 +10,13 @@ import Foundation
 
 class Player : NSObject
 {
-    var name:String
-    var hand:[Card]
-    var trumpRank:Rank
+    var name:String = ""
+    var hand:[Card] = []
+    var trumpRank:Rank = Rank.Two
     
-    override init()
+    init(name:String)
     {
-        name = ""
+        self.name = name
         hand = []
         trumpRank = Rank.Ace
     }

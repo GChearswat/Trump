@@ -8,15 +8,17 @@
 
 import Foundation
 
-enum Suit {
-    case Spade
+enum Suit: Int {
+    case Spade = 0
     case Heart
     case Diamond
     case Club
+    
+    static var count: Int { return Suit.Club.hashValue + 1}
 }
 
-enum Rank {
-    case Two
+enum Rank: Int {
+    case Two = 0
     case Three
     case Four
     case Five
@@ -29,11 +31,13 @@ enum Rank {
     case Queen
     case King
     case Ace
+    
+    static var count: Int { return Rank.Ace.hashValue + 1}
 }
 
 class Card: NSObject {
-    var suit:Suit!
-    var rank:Rank!
+    let suit:Suit!
+    let rank:Rank!
     
     init(suit:Suit, rank: Rank) {
         self.suit = suit
