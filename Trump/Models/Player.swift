@@ -11,13 +11,18 @@ import Foundation
 class Player : NSObject
 {
     var name:String = ""
-    var hand:[Card] = []
+    var hand:Deck
     var trumpRank:Rank = Rank.Two
     
     init(name:String)
     {
         self.name = name
-        hand = []
-        trumpRank = Rank.Ace
+        hand = Deck()
+        hand.resetWithNumberOfDecks(1)
+        trumpRank = Rank.Two
+    }
+    
+    func displayHandContents() -> String {
+        return hand.getStringDescription()
     }
 }

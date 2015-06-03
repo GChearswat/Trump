@@ -28,7 +28,7 @@ class Deck: NSObject {
             }
         }
         
-        cards = shuffle(cards)
+//        cards = shuffle(cards)
     }
     
     func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
@@ -42,5 +42,24 @@ class Deck: NSObject {
     
     func emptyDeck () {
         cards = []
+    }
+    
+    func getStringDescription () -> String {
+        
+        var returnString = ""
+        
+        for var i = 0; i < cards.count; i++ {
+            if i != 0
+            {
+                returnString += ", "
+            }
+            
+            var card:Card = cards[i]
+            returnString += card.suit!.description
+            returnString += card.rank!.description
+            
+        }
+        
+        return returnString
     }
 }

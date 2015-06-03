@@ -15,6 +15,21 @@ enum Suit: Int {
     case Club
     
     static var count: Int { return Suit.Club.hashValue + 1}
+    
+    var description: String {
+        switch self {
+        case .Spade:
+            return "♠"
+        case .Heart:
+            return "H"
+        case .Club:
+            return "C"
+        case .Diamond:
+            return "D"
+        default:
+            return ""
+        }
+    }
 }
 
 enum Rank: Int {
@@ -33,6 +48,39 @@ enum Rank: Int {
     case Ace
     
     static var count: Int { return Rank.Ace.hashValue + 1}
+    
+    var description: String {
+        switch self {
+        case .Two:
+            return "2"
+        case .Three:
+            return "3"
+        case .Four:
+            return "4"
+        case .Five:
+            return "5"
+        case .Six:
+            return "6"
+        case .Seven:
+            return "7"
+        case .Eight:
+            return "8"
+        case .Nine:
+            return "9"
+        case .Ten:
+            return "10"
+        case .Jack:
+            return "J"
+        case .Queen:
+            return "Q"
+        case .King:
+            return "K"
+        case .Ace:
+            return "A"
+        default:
+            return ""
+        }
+    }
 }
 
 class Card: NSObject {
